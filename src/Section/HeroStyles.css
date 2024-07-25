@@ -1,0 +1,105 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  height: 100dvh;
+  min-height: 500px;
+}
+
+.hero-image {
+  max-width: 200px;
+}
+
+.hero-icon-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.hero-icon-link {
+  margin: 0;
+}
+
+.hero-icon-image {
+  width: 30px;
+}
+
+.hero-link {
+  width: fit-content;
+  align-self: center;
+}
+
+.hero-button {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  border: none;
+  border-radius: 20px;
+  width: 126px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.hero-button:hover {
+  transform: scale(1.05);
+}
+
+.hero-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.hero-color-mode-container {
+  position: relative;
+}
+
+.hero-color-mode-icon {
+  position: absolute;
+  right: 0;
+  width: 25px;
+}
+
+.hero-color-mode-icon:hover {
+  cursor: pointer;
+}
+
+.hero-description {
+  max-width: 24ch;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 800px) {
+  .hero-container {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .hero-image {
+    max-width: 350px;
+    width: 350px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero-container .hero-image {
+    max-width: 400px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 799px) {
+  .hero-description {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
