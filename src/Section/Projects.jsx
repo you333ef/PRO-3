@@ -55,7 +55,7 @@ const Projects = () => {
       />
       <ProjectCard
         src={viberr}
-        link="https://github.com/Ade-mir/company-landing-page-2"
+        link="https://twice-task-landing-t8jp.vercel.app/"
         h3="Viva"
         p="VIVA DECOR"
       />
